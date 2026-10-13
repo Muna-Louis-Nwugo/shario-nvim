@@ -1,0 +1,9 @@
+{
+  "name": "shario-nvim-bridge",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Relays Neovim <-> shar server socket.io traffic. See socket-bridge.js.",
+  "dependencies": {
+    "socket.io-client": "^4.0.0"
+  }
+}
