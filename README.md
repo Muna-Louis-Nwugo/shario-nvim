@@ -2,7 +2,7 @@
 
 A Neovim client for [`shario`](https://github.com/Muna-Louis-Nwugo/shario) — implements the IDE side of the
 protocol described in `shario`'s own
-[`info/PLUGIN_SPECIFICATIONS.md`](https://github.com/Muna-Louis-Nwugo/shario/info/PLUGIN_SPECIFICATIONS.md).
+[`info/PLUGIN_SPECIFICATIONS.md`](https://github.com/Muna-Louis-Nwugo/shario/blob/main/info/PLUGIN_SPECIFICATIONS.md).
 `shario-vscode/extension.js` is the reference implementation this was
 ported from; when the two disagree, that's the one to trust.
 
