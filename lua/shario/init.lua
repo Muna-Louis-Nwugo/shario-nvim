@@ -119,7 +119,7 @@ local function handle_bridge_event(event, data, message)
                 return -- still alive -- not what killed the connection
             end
             notify("Shar server appears to have died -- attempting to restart it...", vim.log.levels.WARN)
-            process.restart(M.port, function(line)
+            process.restart(M.port, M.enable_beta, function(line)
                 vim.schedule(function()
                     vim.api.nvim_echo({ { "[shario server] " .. line } }, false, {})
                 end)
@@ -181,7 +181,7 @@ local function connect()
 end
 
 local function start_session(args, label)
-    process.start(args, M.port, function(line)
+    process.start(args, M.port, M.enable_beta, function(line)
         vim.schedule(function()
             vim.api.nvim_echo({ { "[shario server] " .. line } }, false, {})
         end)
